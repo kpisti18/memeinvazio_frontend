@@ -42,7 +42,7 @@ function renderMemes(memes) {
 
         // card header profilkép
         const cardImg = document.createElement('img');
-        cardImg.src = `http://127.0.0.1:3000/uploads/${meme.profile_pic}`;
+        cardImg.src = `https://nodejs103.dszcbaross.edu.hu/uploads/${meme.profile_pic}`;
         cardImg.alt = meme.name;
         cardHeaderDiv.append(cardImg);
 
@@ -54,7 +54,7 @@ function renderMemes(memes) {
         picDiv.classList.add('pic-div');
 
         const picDivImg = document.createElement('img');
-        picDivImg.src = `http://127.0.0.1:3000/uploads/${meme.meme}`;
+        picDivImg.src = `https://nodejs103.dszcbaross.edu.hu/uploads/${meme.meme}`;
         picDivImg.alt = meme.meme;
 
         picDiv.append(picDivImg);
