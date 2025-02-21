@@ -89,7 +89,7 @@ function renderMemes(memes) {
 
 // lájkolás funkció
 async function vote(upload_id) {
-    const res = await fetch(`http://localhost:3000/api/likes/like/${upload_id}`, {
+    const res = await fetch(`https://nodejs103.dszcbaross.edu.h/api/likes/like/${upload_id}`, {
         method: 'POST',
         credentials: 'include'
     });
@@ -104,7 +104,7 @@ async function vote(upload_id) {
 
 // unlikeolás funkció
 async function devote(upload_id) {
-    const res = await fetch(`http://localhost:3000/api/likes/unlike/${upload_id}`, {
+    const res = await fetch(`https://nodejs103.dszcbaross.edu.h/api/likes/unlike/${upload_id}`, {
         method: 'DELETE',
         credentials: 'include'
     });

@@ -52,6 +52,6 @@ async function getProfilePic() {
     console.log(data);
     
     if (res.ok) {
-        btnPic.style.backgroundImage = `url('http://127.0.0.1:3000/uploads/${data[0].profile_pic}')`;
+        btnPic.style.backgroundImage = `url('https://nodejs103.dszcbaross.edu.h/uploads/${data[0].profile_pic}')`;
     }
 }
